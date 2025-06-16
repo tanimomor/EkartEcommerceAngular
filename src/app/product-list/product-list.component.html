@@ -1,0 +1,16 @@
+<img [src]="product.pImage" />
+<p>Product List</p>
+<p>Name: {{product.name}}</p>
+<p>Price: {{'$' + product.price}}</p>
+<p>Discounted Price: ${{ getDiscountedPrice() }}</p>
+<p>Actual Price: ${{product.price}}</p>
+<p>Description: {{product.description}}</p>
+<p>Image: {{product.image}}</p>
+<p>Category: {{product.category}}</p>
+<p>Brand: {{product.brand}}</p>
+<p>Rating: {{product.rating}}</p>
+<p>Reviews: {{product.reviews}}</p>
+<p>Stock: {{product.stock}}</p>
+<p>Availability: {{product.availability}}</p>
+
+<button [disabled]="!(product.availability=='In Stock')">Buy Now</button>
